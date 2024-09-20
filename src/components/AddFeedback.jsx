@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import NavBarUser from './NavBarUser'
 
 const AddFeedback = () => {
 
@@ -31,8 +32,8 @@ const AddFeedback = () => {
 
   return (
     <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
-        
-            <center><h1 style={{ color: "white" }}>ADD FEEDBACK</h1></center>
+        <NavBarUser/>
+           <br /> <center><h1 style={{ color: "white" }}>ADD FEEDBACK</h1></center><br />
             <div className="container" style={{ color: "white" }}>
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">

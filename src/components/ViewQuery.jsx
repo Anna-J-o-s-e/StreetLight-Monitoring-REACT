@@ -2,21 +2,21 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import NavBarOrg from './NavBarOrg'
 
-const ViewFeedback = () => {
+const ViewQuery = () => {
     const [todos,changeTodos]=useState([])
     const fetchData=()=>{
-        axios.get("http://localhost:8080/viewfeedback").then(
+        axios.get("http://localhost:8080/viewqueries").then(
             (response)=>{
                 changeTodos(response.data)
             }
         ).catch().finally()
     }
-    useEffect(()=>{ fetchData() },[])
+    useEffect(()=>{fetchData()},[])
   return (
     <div>
-            
+          
             <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
-              <NavBarOrg/>
+             <NavBarOrg/>
                <br /> <center><h1 style={{ color: "white" }}>VIEW FEEDBACK</h1></center>
                 <br></br>
                 <center>
@@ -26,8 +26,11 @@ const ViewFeedback = () => {
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">RATING</th>
-                                            <th scope="col">COMMENTS</th>
+                                            <th scope="col">NAME</th>
+                                            <th scope="col">EMAIL-ID</th>
+                                            <th scope="col">DATE</th>
+                                            <th scope="col">CATEGORY</th>
+                                            <th scope="col">CONCERN</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -35,8 +38,11 @@ const ViewFeedback = () => {
                                             todos.map(
                                                 (value, index) => {
                                                     return <tr>
-                                                        <th scope="row">{value.rating}</th>
-                                                        <td>{value.comments}</td>
+                                                        <th scope="row">{value.rname}</th>
+                                                        <td>{value.rmail}</td>
+                                                        <td>{value.rdate}</td>
+                                                        <td>{value.rtype}</td>
+                                                        <td>{value.query}</td>
                                                     </tr>
                                                 }
                                             )
@@ -56,4 +62,4 @@ const ViewFeedback = () => {
   )
 }
 
-export default ViewFeedback
+export default ViewQuery
