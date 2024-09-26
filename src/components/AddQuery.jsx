@@ -35,7 +35,7 @@ const readValue=()=>{
     <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
            <NavBarUser/>
            <br />
-            <center><h1 style={{ color: "white" }}>ADD RESULTS</h1></center>
+            <center><h1 style={{ color: "white" }}>ADD QUERY</h1></center>
             <br />
             <div className="container" style={{ color: "white" }}>
                 <div className="row">
@@ -75,7 +75,8 @@ const readValue=()=>{
                                     
                                 </div>
                                 <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <p><a href="" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Login</a></p>
+                            <p><a href="/" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Login</a></p>
+                            <p><a href="/DashboardUser" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to User Dashboard</a></p>
                             </div>
                             </div>
                         </div>

@@ -64,7 +64,8 @@ const AddFeedback = () => {
                                     
                                 </div>
                                 <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <p><a href="" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Login</a></p>
+                            <p><a href="/" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Login</a></p>
+                            <p><a href="/DashboardUser" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to User Dashboard</a></p>
                             </div>
                             </div>
                         </div>
