@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const NavBarOrg = () => {
+const MainNavBar = () => {
   return (
     <div>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -13,10 +13,13 @@ const NavBarOrg = () => {
 <div className="collapse navbar-collapse" id="navbarSupportedContent">
   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
     <li className="nav-item">
-    <Link className="nav-link" to="/ViewQuery">VIEW QUERY</Link>
+    <Link className="nav-link" to="">ADMIN LOGIN</Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link" to="/ViewFeedback">VIEW FEEDBACK</Link>
+      <Link className="nav-link" to="">ORGANIZATION LOGIN</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/UserLogin">USER LOGIN</Link>
     </li>
   </ul>
 </div>
@@ -26,4 +29,4 @@ const NavBarOrg = () => {
   )
 }
 
-export default NavBarOrg
+export default MainNavBar
