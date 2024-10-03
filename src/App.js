@@ -10,6 +10,7 @@ import DashboardOrg from './components/DashboardOrg';
 import UserSignUp from './components/UserSignUp';
 import MainDashboard from './components/MainDashboard';
 import UserLogin from './components/UserLogin';
+import OrganizationLogin from './components/OrganizationLogin';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Route path='/UserLogin' element={<UserLogin/>}/>
       <Route path='/UserSignUp' element={<UserSignUp/>}/>
       <Route path='/DashboardUser' element={<DashboardUser/>}/>
+      <Route path='/OrganizationLogin' element={<OrganizationLogin/>}/>
      </Routes>
      </BrowserRouter> 
      <UserSignUp/>
