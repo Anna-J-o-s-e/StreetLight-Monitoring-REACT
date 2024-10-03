@@ -53,7 +53,7 @@ let navigate=useNavigate()
                                 <input type="password" name="upassword" onChange={inputHandler} value={data.upassword} id="" className="form-control" style={{ width: '50%', height: '50%' }} placeholder='enter your password' />
                             </div>
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                            <button className="btn btn-primary" onClick={readValue}>LOGIN</button>
+                            <button className="btn btn-warning" style={{ backgroundColor: 'black', color: 'white', padding: '10px 20px' }} onClick={readValue}>LOGIN</button>
                             </div>
                             <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
                             <p><a href="/UserSignUp" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Click to SignUp</a></p>
