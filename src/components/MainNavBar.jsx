@@ -16,7 +16,7 @@ const MainNavBar = () => {
     <Link className="nav-link" to="">ADMIN LOGIN</Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link" to="">ORGANIZATION LOGIN</Link>
+      <Link className="nav-link" to="/OrganizationLogin">ORGANIZATION LOGIN</Link>
     </li>
     <li className="nav-item">
       <Link className="nav-link" to="/UserLogin">USER LOGIN</Link>
