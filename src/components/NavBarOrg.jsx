@@ -18,6 +18,12 @@ const NavBarOrg = () => {
     <li className="nav-item">
       <Link className="nav-link" to="/ViewFeedback">VIEW FEEDBACK</Link>
     </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/ReplyQuery">ADD REPLY</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/ViewUsersOrg">VIEW USERS</Link>
+    </li>
   </ul>
 </div>
 </div>

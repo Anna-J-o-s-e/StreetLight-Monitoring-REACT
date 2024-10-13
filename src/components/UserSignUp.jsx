@@ -8,6 +8,8 @@ const UserSignUp = () => {
             "umail":"",
             "uaddress":"",
             "uphone":"",
+            "utype":"",
+            "uadmsno":"",
             "upassword":"",
             "uconfirmpassword":""
         }
@@ -37,14 +39,14 @@ const UserSignUp = () => {
             <center>
                
                 <br />
-                <h1 style={{ color: "white" }}>USER SIGNUP</h1></center>
+                <h1 style={{ color: "white" }}>STUDENT / FACULTY SIGNUP</h1></center>
             <div className="container">
                 <div className="row" style={{ color: "white" }}>
                     <br />
                     <col className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" />
                     <div className="row g-3">
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <label htmlFor="" className="form-label">User Name</label>
+                            <label htmlFor="" className="form-label">Name</label>
                             <input type="text" name='uname' onChange={inputHandler} value={data.uname} className="form-control" placeholder='enter your name' />
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -60,8 +62,21 @@ const UserSignUp = () => {
                             <input type="text" name='uphone' onChange={inputHandler} value={data.uphone} className="form-control" placeholder='enter phone number' />
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                    <label htmlFor="" className="form-label">Category</label>
+                                    <select name="utype" id="" className="form-control" placeholder="select the type" value={data.utype} onChange={inputHandler}>
+                                        <option value="">Select one</option>
+                                        <option value="student">Student</option>
+                                        <option value="faculty">Faculty</option>
+                                    </select>
+                                </div>
+                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                             <label htmlFor="" className="form-label">Password</label>
                             <input type="password" name="upassword" id="" onChange={inputHandler} value={data.upassword} className="form-control" placeholder='enter your password' />
+
+                        </div>
+                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <label htmlFor="" className="form-label">Admission Number / Employee Id</label>
+                            <input type="password" name="uadmsno" id="" onChange={inputHandler} value={data.uadmsno} className="form-control" placeholder='enter your employee id/admission number' />
 
                         </div>
                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -73,7 +88,7 @@ const UserSignUp = () => {
                             <center><button className="btn btn-warning" style={{ backgroundColor: 'black', color: 'white', padding: '10px 20px' }} onClick={readValue} >SIGN UP</button></center>
                         </div>
                         <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <p><a href="/UserLogin" class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Click to Login</a></p>
+                            <p><a href="/UserLogin" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Click to Login</a></p>
                             </div>
                     </div>
                 </div>

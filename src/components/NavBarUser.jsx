@@ -18,6 +18,9 @@ const NavBarUser = () => {
     <li className="nav-item">
       <Link className="nav-link" to="/AddFeedback">ADD FEEDBACK</Link>
     </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/ViewReply">SEARCH REPLY</Link>
+    </li>
   </ul>
 </div>
 </div>

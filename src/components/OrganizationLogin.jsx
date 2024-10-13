@@ -31,7 +31,7 @@ let navigate=useNavigate()
     <div>
             
             <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
-                <center><h1 style={{ color: "white" }}>ORGANIZATION LOGIN</h1></center>
+                <center><h1 style={{ color: "white" }}>STAFF LOGIN</h1></center>
                 <div className="container">
                     <div className="row" style={{ color: "white" }}>
                         <col className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" />
