@@ -11,6 +11,14 @@ import UserSignUp from './components/UserSignUp';
 import MainDashboard from './components/MainDashboard';
 import UserLogin from './components/UserLogin';
 import OrganizationLogin from './components/OrganizationLogin';
+import DashboardAdmin from './components/DashboardAdmin';
+import AdminLogin from './components/AdminLogin';
+import AddOrg from './components/AddOrg';
+import ViewUsers from './components/ViewUsers';
+import ViewEmployees from './components/ViewEmployees';
+import ReplyQuery from './components/ReplyQuery';
+import ViewReply from './components/ViewReply';
+import ViewUsersOrg from './components/ViewUsersOrg';
 
 function App() {
   return (
@@ -27,6 +35,14 @@ function App() {
       <Route path='/UserSignUp' element={<UserSignUp/>}/>
       <Route path='/DashboardUser' element={<DashboardUser/>}/>
       <Route path='/OrganizationLogin' element={<OrganizationLogin/>}/>
+      <Route path='/DashboardAdmin' element={<DashboardAdmin/>}/>
+      <Route path='/AdminLogin' element={<AdminLogin/>}/>
+      <Route path='/AddOrg' element={<AddOrg/>}/>
+      <Route path='/ViewUsers' element={<ViewUsers/>}/>
+      <Route path='/ViewEmployees' element={<ViewEmployees/>}/>
+      <Route path='ReplyQuery' element={<ReplyQuery/>}/>
+      <Route path='ViewReply' element={<ViewReply/>}/>
+      <Route path='ViewUsersOrg' element={<ViewUsersOrg/>}/>
      </Routes>
      </BrowserRouter> 
      <UserSignUp/>

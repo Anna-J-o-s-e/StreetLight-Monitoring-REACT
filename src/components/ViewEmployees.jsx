@@ -1,36 +1,40 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import NavBarOrg from './NavBarOrg'
+import NavBarAdmin from './NavBarAdmin'
 
-const ViewQuery = () => {
-    const [todos,changeTodos]=useState([])
-    const fetchData=()=>{
-        axios.get("http://localhost:8080/viewqueries").then(
-            (response)=>{
+const ViewEmployees = () => {
+
+    const [todos, changeTodos] = useState([])
+    const fetchData = () => {
+        axios.get("http://localhost:8080/vieworganization").then(
+            (response) => {
                 changeTodos(response.data)
             }
         ).catch().finally()
     }
-    useEffect(()=>{fetchData()},[])
-  return (
-    <div>
-          
+    useEffect(() => { fetchData() }, [])
+
+    return (
+        <div>
+            <NavBarAdmin/>
             <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
-             <NavBarOrg/>
-               <br /> <center><h1 style={{ color: "white" }}>VIEW FEEDBACK</h1></center>
+                <center><h1 style={{ color: "white" }}>VIEW EMPLOYEES</h1></center>
                 <br></br>
                 <center>
-                    <div className="container" style={{ color: "white" }}>
-                        <div className="row">
+                    <div className="container">
+                        <div className="row" style={{ color: "white" }}>
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th scope="col">NAME</th>
-                                            <th scope="col">EMAIL-ID</th>
-                                            <th scope="col">DATE</th>
-                                            <th scope="col">CATEGORY</th>
-                                            <th scope="col">CONCERN</th>
+                                            <th scope="col">EMPLOYEE NAME</th>
+
+                                            <th scope="col">DESIGNATION</th>
+
+                                            <th scope="col">PHONE</th>
+
+                                            <th scope="col">EMPLOYEE ID</th>
+                                            <th scope="col">EMAIL</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -38,11 +42,14 @@ const ViewQuery = () => {
                                             todos.map(
                                                 (value, index) => {
                                                     return <tr>
-                                                        <th scope="row">{value.rname}</th>
-                                                        <td>{value.rmail}</td>
-                                                        <td>{value.rdate}</td>
-                                                        <td>{value.rtype}</td>
-                                                        <td>{value.query}</td>
+
+                                                        <th scope="row">{value.oname}</th>
+                                                        
+                                                        <td>{value.oaddress}</td>
+                                                        <td>{value.ophone}</td>
+                                                        
+                                                        <td>{value.oid}</td>
+                                                        <td>{value.omail}</td>
                                                     </tr>
                                                 }
                                             )
@@ -51,16 +58,19 @@ const ViewQuery = () => {
                                 </table>
                             </div>
                             <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                                <p><a href="/DashboardOrg" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Staff Dashboard</a></p>
+
+                                <p><a href="/DashboardAdmin" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Admin Dashboard</a></p>
                                 <p><a href="/" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Login</a></p>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </center>
+
+
             </div>
         </div>
-  )
+    )
 }
 
-export default ViewQuery
+export default ViewEmployees

@@ -6,7 +6,7 @@ const NavBarUser = () => {
     <div>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
 <div className="container-fluid">
-<a className="navbar-brand" href="/">STREETLIGHT MONITORING APP</a>
+<a className="navbar-brand" href="/">STREETLIGHT MONITORING SYSTEM</a>
 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   <span className="navbar-toggler-icon"></span>
 </button>
@@ -17,6 +17,9 @@ const NavBarUser = () => {
     </li>
     <li className="nav-item">
       <Link className="nav-link" to="/AddFeedback">ADD FEEDBACK</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/ViewReply">SEARCH REPLY</Link>
     </li>
   </ul>
 </div>
