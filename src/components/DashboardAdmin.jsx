@@ -5,9 +5,10 @@ const DashboardAdmin = () => {
   return (
     <div>
         <NavBarAdmin/>
-        <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
+        <h1>Welcome, Admin</h1>
+          <p>Here you can monitor the system !!!!!!</p>
         </div>
-    </div>
+   
   )
 }
 

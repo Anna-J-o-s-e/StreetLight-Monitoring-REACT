@@ -55,7 +55,7 @@ const AdminLogin = () => {
                                 <input type="password" name="apassword" onChange={inputHandler} value={data.apassword} id="" className="form-control" style={{ width: '50%', height: '50%' }} placeholder='enter your password' />
                             </div>
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                                <button className="btn btn-warning" style={{ backgroundColor: 'black', color: 'white', padding: '10px 20px' }} onClick={readValue}>LOGIN</button>
+                                <button className="btn btn-warning"  onClick={readValue}>LOGIN</button>
                             </div>
 
                         </div>
