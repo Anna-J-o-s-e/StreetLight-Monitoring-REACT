@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './MainNavBar.css'; // Import the CSS file
 
 const MainNavBar = () => {
   return (
-    <div>
+    <div className='main-navbar'>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
 <div className="container-fluid">
 <a className="navbar-brand" href="/">STREETLIGHT MONITORING SYSTEM</a>

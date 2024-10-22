@@ -1,0 +1,105 @@
+/* MainDashboard.css */
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+        opacity: 1; /* Start visible */
+    }
+    100% {
+        transform: translateX(-100%); /* Move off-screen to the left */
+        opacity: 1; /* Keep it visible */
+    }
+}
+
+
+
+.main-dashboard {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background color */
+    padding: 20px; /* Padding around the content */
+    padding-top: 70px; /* Add padding-top to move content down */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    position: relative; /* Set relative positioning for absolute children */
+}
+
+
+nav {
+    width: 100%; /* Ensure the navbar takes the full width */
+}
+
+.ribbon {
+    background-image: linear-gradient(90deg, #4b79a1 0%, #283e51 100%); /* Gradient background */
+    padding: 10px 0; /* Padding around the ribbon */
+    width: 100%; /* Full width of the container */
+    overflow: hidden; /* Hide overflow */
+}
+
+h2 {
+    font-size: 2rem; /* Font size for the h2 elements */
+    color: white; /* White text color */
+    text-align: center; /* Center the h2 text */
+    white-space: nowrap; /* Prevent line break */
+    animation: slideInFromRight 15s linear infinite; /* Slow movement */
+    margin: 0; /* Remove margin */
+}
+
+.content {
+    display: flex; /* Use flexbox for content alignment */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+.main-dashboard.h1 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    background-image: linear-gradient(90deg, #4b79a1 0%, #283e51 100%); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent to show background */
+    margin: 20px 0; /* Space above and below the heading */
+    text-align: center; /* Center the heading text */
+    text-transform: uppercase; /* Uppercase letters for the heading */
+}
+
+p {
+    font-size: 1.2rem; /* Slightly larger font size for paragraph */
+    background-image: linear-gradient(90deg, #4b79a1 0%, #283e51 100%); /* Gradient background */
+    -webkit-background-clip: text; /* Clip background to text */
+    -webkit-text-fill-color: transparent; /* Make text color transparent to show background */
+    line-height: 1.6; /* Improve readability */
+    max-width: 800px; /* Limit the width of the paragraph */
+    text-align: center; /* Center the paragraph text */
+    margin: 20px 0; /* Margin around the paragraph */
+}
+
+/* Additional spacing to move content up slightly */
+.main-dashboard > div {
+    margin-top: 20px; /* Adjust this value to move the content up or down */
+}
+
+@media (max-width: 768px) {
+    .main-dashboard.h1 {
+        font-size: 2rem; /* Smaller font size on mobile */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font size for h2 on mobile */
+    }
+
+    p {
+        font-size: 1rem; /* Smaller font size on mobile */
+    }
+}
+
+.college-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 1200px; /* Increase the max width to make the image longer horizontally */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space below the image */
+    display: block; /* Ensure it's a block element */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for depth */
+}

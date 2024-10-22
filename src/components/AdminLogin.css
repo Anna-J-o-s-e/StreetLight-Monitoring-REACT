@@ -1,0 +1,98 @@
+/* AdminLogin.css */
+
+/* Full page background */
+.admin-login {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Use full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3e50; /* Dark slate blue */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Centered login container */
+.admin-login .container {
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading styling */
+.admin-login h1 {
+    color: #f8f9fa; /* Light color heading */
+    margin-bottom: 30px;
+    font-size: 2.5em; /* Adjusted heading size */
+}
+
+/* Input fields */
+.admin-login .form-control {
+    background-color: #ffffff;
+    border: 2px solid #bdc3c7;
+    color: #2c3e50;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.admin-login .form-control:focus {
+    border-color: #2980b9; /* Blue border on focus */
+    outline: none;
+}
+
+/* Label styling */
+.admin-login .form-label {
+    color: #34495e;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Login button styling */
+.admin-login .btn-warning {
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9; /* Bright blue button */
+    color: white;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-login .btn-warning:hover {
+    background-color: #1a5276; /* Darker blue on hover */
+}
+
+/* Small text for additional links (optional) */
+.admin-login .small-text {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+/* Responsive layout for smaller devices */
+@media (max-width: 768px) {
+    .admin-login .container {
+        padding: 30px;
+    }
+
+    .admin-login h1 {
+        font-size: 2em;
+    }
+
+    .admin-login .form-control, 
+    .admin-login .btn-warning {
+        font-size: 1em;
+    }
+}

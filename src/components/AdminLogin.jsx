@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import './AdminLogin.css'; // Import the CSS file
 
 const AdminLogin = () => {
 
@@ -37,12 +38,12 @@ const AdminLogin = () => {
 
     return (
 
-        <div>
+        <div class="admin-login">
 
-            <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
-                <center><h1 style={{ color: "white" }}>ADMIN LOGIN</h1></center>
+            <div>
+                <h1>ADMIN LOGIN</h1>
                 <div className="container">
-                    <div className="row" style={{ color: "white" }}>
+                    <div className="row" >
                         <col className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" />
                         <div className="row g-3">
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
