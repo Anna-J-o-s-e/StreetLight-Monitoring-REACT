@@ -25,6 +25,9 @@ const NavBarOrg = () => {
       <Link className="nav-link" to="/ViewUsersOrg">VIEW USERS</Link>
     </li>
     <li className="nav-item">
+      <Link className="nav-link" to="/AddStreetlight">ADD NIGHT-LIGHTS</Link>
+    </li>
+    <li className="nav-item">
       <Link className="nav-link" to="/ViewStreetlight">VIEW NIGHT-LIGHTS</Link>
     </li>
   </ul>
