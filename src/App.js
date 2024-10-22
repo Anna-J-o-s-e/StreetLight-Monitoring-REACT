@@ -21,6 +21,9 @@ import ViewReply from './components/ViewReply';
 import ViewUsersOrg from './components/ViewUsersOrg';
 import ViewStreetlight from './components/ViewStreetlight';
 import AddStreetlight from './components/AddStreetlight';
+import ViewFeedbackAdmin from './components/ViewFeedbackAdmin';
+import ViewStreetlightUser from './components/ViewStreetlightUser';
+import ViewStreetlightAdmin from './components/ViewStreetlightAdmin';
 
 function App() {
   return (
@@ -47,6 +50,9 @@ function App() {
       <Route path='/ViewUsersOrg' element={<ViewUsersOrg/>}/>
       <Route path='/ViewStreetlight' element={<ViewStreetlight/>}/>
       <Route path='/AddStreetlight' element={<AddStreetlight/>}/>
+      <Route path='/ViewFeedbackAdmin' element={<ViewFeedbackAdmin/>}/>
+      <Route path='/ViewStreetlightUser' element={<ViewStreetlightUser/>}/>
+      <Route path='/ViewStreetlightAdmin' element={<ViewStreetlightAdmin/>}/>
      </Routes>
      </BrowserRouter> 
    
