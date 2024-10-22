@@ -21,6 +21,9 @@ const NavBarUser = () => {
     <li className="nav-item">
       <Link className="nav-link" to="/ViewReply">SEARCH REPLY</Link>
     </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/ViewStreetlightUser">VIEW STREETLIGHTS</Link>
+    </li>
   </ul>
 </div>
 </div>

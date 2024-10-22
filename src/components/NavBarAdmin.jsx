@@ -22,6 +22,12 @@ const NavBarAdmin = () => {
     <li className="nav-item">
       <Link className="nav-link" to="/ViewEmployees">VIEW EMPLOYEES</Link>
     </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/ViewFeedbackAdmin">VIEW FEEDBACK</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/ViewStreetlightAdmin">VIEW STREETLIGHT</Link>
+    </li>
   </ul>
 </div>
 </div>

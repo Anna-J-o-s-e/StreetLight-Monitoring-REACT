@@ -38,9 +38,9 @@ nav {
     overflow: hidden; /* Hide overflow */
 }
 
-h2 {
+.main-dashboard h2 {
     font-size: 2rem; /* Font size for the h2 elements */
-    color: white; /* White text color */
+    color: white !important; /* White text color */
     text-align: center; /* Center the h2 text */
     white-space: nowrap; /* Prevent line break */
     animation: slideInFromRight 15s linear infinite; /* Slow movement */
@@ -85,7 +85,7 @@ p {
         font-size: 2rem; /* Smaller font size on mobile */
     }
 
-    h2 {
+    .main-dashboard.h2 {
         font-size: 1.5rem; /* Smaller font size for h2 on mobile */
     }
 
