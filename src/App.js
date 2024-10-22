@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import AddFeedback from './components/AddFeedback';
 import ViewFeedback from './components/ViewFeedback';
@@ -27,6 +27,7 @@ function App() {
     <div>
      <BrowserRouter>
      <Routes>
+      
      <Route path='/' element={<MainDashboard/>}/>
       <Route path='/DashboardOrg' element={<DashboardOrg/>}/>
       <Route path='/AddFeedback' element={<AddFeedback/>}/>
@@ -47,9 +48,10 @@ function App() {
       <Route path='/ViewUsersOrg' element={<ViewUsersOrg/>}/>
       <Route path='/ViewStreetlight' element={<ViewStreetlight/>}/>
       <Route path='/AddStreetlight' element={<AddStreetlight/>}/>
+      
      </Routes>
      </BrowserRouter> 
-     <UserSignUp/>
+    
     </div>
   );
 }
