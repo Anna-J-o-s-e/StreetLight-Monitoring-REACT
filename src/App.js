@@ -49,7 +49,7 @@ function App() {
       <Route path='/AddStreetlight' element={<AddStreetlight/>}/>
      </Routes>
      </BrowserRouter> 
-     <UserSignUp/>
+   
     </div>
   );
 }
