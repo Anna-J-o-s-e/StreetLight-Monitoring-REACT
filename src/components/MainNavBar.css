@@ -1,10 +1,6 @@
 /* MainNavBar.css */
 
-<<<<<<< HEAD
 .main-navbar .navbar {
-=======
-.navbar {
->>>>>>> a558248db3496c6e3b492b696a2086240db82671
     position: fixed; /* Make the navbar fixed at the top */
     top: 0; /* Align it to the very top of the page */
     left: 0; /* Align it to the left */
@@ -16,18 +12,13 @@
     z-index: 1000; /* Ensure it stays above other content */
 }
 
-<<<<<<< HEAD
 .main-navbar .navbar-brand {
-=======
-.navbar-brand {
->>>>>>> a558248db3496c6e3b492b696a2086240db82671
     font-size: 1.6rem; /* Larger font size for brand name */
     color: #ffffff; /* White text color for brand */
     font-weight: 700; /* Bold text */
     letter-spacing: 1px; /* Spacing between letters */
 }
 
-<<<<<<< HEAD
 .main-navbar .navbar-toggler {
     border: none; /* Remove default border */
 }
@@ -37,66 +28,33 @@
 }
 
 .main-navbar .nav-link {
-=======
-.navbar-toggler {
-    border: none; /* Remove default border */
-}
-
-.navbar-toggler-icon {
-    background-color: #ffffff; /* White icon color */
-}
-
-.nav-link {
->>>>>>> a558248db3496c6e3b492b696a2086240db82671
     color: #ffffff; /* White link color */
     margin: 0 20px; /* Horizontal margin between links */
     font-size: 1.1rem; /* Slightly larger font size */
     transition: color 0.3s; /* Smooth transition on hover */
 }
 
-<<<<<<< HEAD
 .main-navbar .nav-link:hover {
-=======
-.nav-link:hover {
->>>>>>> a558248db3496c6e3b492b696a2086240db82671
     color: #ffd700; /* Gold color on hover */
     text-decoration: none; /* Remove underline on hover */
 }
 
-<<<<<<< HEAD
 .main-navbar .collapse.navbar-collapse {
-=======
-.collapse.navbar-collapse {
->>>>>>> a558248db3496c6e3b492b696a2086240db82671
     justify-content: flex-end; /* Align links to the right */
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
     .main-navbar .navbar {
         padding: 10px; /* Less padding on mobile */
     }
     
     .main-navbar .nav-link {
-=======
-    .navbar {
-        padding: 10px; /* Less padding on mobile */
-    }
-    
-    .nav-link {
->>>>>>> a558248db3496c6e3b492b696a2086240db82671
         margin: 0 10px; /* Adjust margins on smaller screens */
     }
 }
 
 /* Add margin to body to prevent content from being hidden behind the fixed navbar */
-<<<<<<< HEAD
 .main-navbar body {
     margin-top: 70px; /* Adjust this value based on your navbar height */
 }
 
-=======
-body {
-    margin-top: 70px; /* Adjust this value based on your navbar height */
-}
->>>>>>> a558248db3496c6e3b492b696a2086240db82671
