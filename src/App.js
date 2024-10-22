@@ -20,6 +20,7 @@ import ReplyQuery from './components/ReplyQuery';
 import ViewReply from './components/ViewReply';
 import ViewUsersOrg from './components/ViewUsersOrg';
 import ViewStreetlight from './components/ViewStreetlight';
+import AddStreetlight from './components/AddStreetlight';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       <Route path='/ViewReply' element={<ViewReply/>}/>
       <Route path='/ViewUsersOrg' element={<ViewUsersOrg/>}/>
       <Route path='/ViewStreetlight' element={<ViewStreetlight/>}/>
+      <Route path='/AddStreetlight' element={<AddStreetlight/>}/>
      </Routes>
      </BrowserRouter> 
      <UserSignUp/>
