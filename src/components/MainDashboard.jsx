@@ -18,8 +18,13 @@ const MainDashboard = () => {
         <p>
             Here you can monitor the status of street lights, manage queries, and view feedback. Use the navigation menu to access different functionalities.
         </p>
+
+    
+
+
     </div>
 </div>
+
   )
 }
 
