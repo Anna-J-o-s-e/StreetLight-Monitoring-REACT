@@ -19,6 +19,7 @@ import ViewEmployees from './components/ViewEmployees';
 import ReplyQuery from './components/ReplyQuery';
 import ViewReply from './components/ViewReply';
 import ViewUsersOrg from './components/ViewUsersOrg';
+import ViewStreetlight from './components/ViewStreetlight';
 
 function App() {
   return (
@@ -40,9 +41,10 @@ function App() {
       <Route path='/AddOrg' element={<AddOrg/>}/>
       <Route path='/ViewUsers' element={<ViewUsers/>}/>
       <Route path='/ViewEmployees' element={<ViewEmployees/>}/>
-      <Route path='ReplyQuery' element={<ReplyQuery/>}/>
-      <Route path='ViewReply' element={<ViewReply/>}/>
-      <Route path='ViewUsersOrg' element={<ViewUsersOrg/>}/>
+      <Route path='/ReplyQuery' element={<ReplyQuery/>}/>
+      <Route path='/ViewReply' element={<ViewReply/>}/>
+      <Route path='/ViewUsersOrg' element={<ViewUsersOrg/>}/>
+      <Route path='/ViewStreetlight' element={<ViewStreetlight/>}/>
      </Routes>
      </BrowserRouter> 
      <UserSignUp/>

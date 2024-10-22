@@ -17,7 +17,7 @@ const ViewQuery = () => {
           
             <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
              <NavBarOrg/>
-               <br /> <center><h1 style={{ color: "white" }}>VIEW FEEDBACK</h1></center>
+               <br /> <center><h1 style={{ color: "white" }}>VIEW QUERY</h1></center>
                 <br></br>
                 <center>
                     <div className="container" style={{ color: "white" }}>
