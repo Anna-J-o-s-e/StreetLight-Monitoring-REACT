@@ -1,0 +1,59 @@
+/* NavBarUser.css */
+
+.navbar-user .navbar {
+    position: fixed; /* Make the navbar fixed at the top */
+    top: 0; /* Align it to the very top of the page */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Full width */
+    background-color: #3a9a6f; /* Solid green background color */
+    background-image: linear-gradient(90deg, #3a9a6f 0%, #2b6f53 100%); /* Gradient background */
+    padding: 15px 30px; /* Padding around the navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-user .navbar-brand {
+    font-size: 1.6rem; /* Larger font size for brand name */
+    color: #ffffff; /* White text color for brand */
+    font-weight: 700; /* Bold text */
+    letter-spacing: 1px; /* Spacing between letters */
+}
+
+.navbar-user .navbar-toggler {
+    border: none; /* Remove default border */
+}
+
+.navbar-user .navbar-toggler-icon {
+    background-color: #ffffff; /* White icon color */
+}
+
+.navbar-user .nav-link {
+    color: #ffffff; /* White link color */
+    margin: 0 20px; /* Horizontal margin between links */
+    font-size: 1.1rem; /* Slightly larger font size */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.navbar-user .nav-link:hover {
+    color: #ffd700; /* Gold color on hover */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.navbar-user .collapse.navbar-collapse {
+    justify-content: flex-end; /* Align links to the right */
+}
+
+@media (max-width: 768px) {
+    .navbar-user .navbar {
+        padding: 10px; /* Less padding on mobile */
+    }
+    
+    .navbar-user .nav-link {
+        margin: 0 10px; /* Adjust margins on smaller screens */
+    }
+}
+
+/* Add margin to body to prevent content from being hidden behind the fixed navbar */
+.navbar-user body {
+    margin-top: 70px; /* Adjust this value based on your navbar height */
+}

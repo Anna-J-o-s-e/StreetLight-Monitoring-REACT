@@ -11,8 +11,6 @@
     }
 }
 
-
-
 .main-dashboard {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
@@ -26,12 +24,11 @@
     position: relative; /* Set relative positioning for absolute children */
 }
 
-
-nav {
+.main-dashboard nav {
     width: 100%; /* Ensure the navbar takes the full width */
 }
 
-.ribbon {
+.main-dashboard .ribbon {
     background-image: linear-gradient(90deg, #4b79a1 0%, #283e51 100%); /* Gradient background */
     padding: 10px 0; /* Padding around the ribbon */
     width: 100%; /* Full width of the container */
@@ -47,14 +44,14 @@ nav {
     margin: 0; /* Remove margin */
 }
 
-.content {
+.main-dashboard .content {
     display: flex; /* Use flexbox for content alignment */
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center items horizontally */
     justify-content: center; /* Center items vertically */
 }
 
-.main-dashboard.h1 {
+.main-dashboard h1 {
     font-size: 2.5rem; /* Larger font size for the heading */
     background-image: linear-gradient(90deg, #4b79a1 0%, #283e51 100%); /* Gradient background */
     -webkit-background-clip: text; /* Clip background to text */
@@ -64,7 +61,7 @@ nav {
     text-transform: uppercase; /* Uppercase letters for the heading */
 }
 
-p {
+.main-dashboard p {
     font-size: 1.2rem; /* Slightly larger font size for paragraph */
     background-image: linear-gradient(90deg, #4b79a1 0%, #283e51 100%); /* Gradient background */
     -webkit-background-clip: text; /* Clip background to text */
@@ -81,20 +78,20 @@ p {
 }
 
 @media (max-width: 768px) {
-    .main-dashboard.h1 {
+    .main-dashboard h1 {
         font-size: 2rem; /* Smaller font size on mobile */
     }
 
-    .main-dashboard.h2 {
+    .main-dashboard h2 {
         font-size: 1.5rem; /* Smaller font size for h2 on mobile */
     }
 
-    p {
+    .main-dashboard p {
         font-size: 1rem; /* Smaller font size on mobile */
     }
 }
 
-.college-image {
+.main-dashboard .college-image {
     width: 100%; /* Make the image responsive */
     max-width: 1200px; /* Increase the max width to make the image longer horizontally */
     height: auto; /* Maintain aspect ratio */
@@ -103,3 +100,4 @@ p {
     border-radius: 10px; /* Optional: add rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional: add a shadow for depth */
 }
+

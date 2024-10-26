@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import NavBarOrg from './NavBarOrg'
+import './ViewUsersOrg.css';
 
 const ViewUsersOrg = () => {
 
@@ -17,14 +18,15 @@ const ViewUsersOrg = () => {
 
   return (
     
-    <div>
+    <div className="viewusers-org">
+        <center>
             <NavBarOrg/>
-            <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
-                <center><h1 style={{ color: "white" }}>VIEW USERS</h1></center>
+            <div>
+                <h1>VIEW USERS</h1>
                 <br></br>
-                <center>
+                
                     <div className="container">
-                        <div className="row" style={{ color: "white" }}>
+                        <div className="row">
                             <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                 <table class="table">
                                     <thead>
@@ -55,18 +57,20 @@ const ViewUsersOrg = () => {
                                     </tbody>
                                 </table>
                             </div>
-                            <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
                             
-                            <p><a href="/DashboardOrg" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Staff Dashboard</a></p>
-                            <p><a href="/" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Login</a></p>
-                            </div>
                         </div>
 
                     </div>
-                </center>
+               
 
 
             </div>
+            <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
+                            
+                            <p><a href="/DashboardOrg" class="link-white">Back to Staff Dashboard</a></p>
+                            <p><a href="/" class="link-white">Back to Login</a></p>
+                            </div>
+                            </center>
         </div>
   )
 }

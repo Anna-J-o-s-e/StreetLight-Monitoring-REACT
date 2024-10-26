@@ -1,0 +1,52 @@
+/* ViewStreetlight.css */
+
+.view-streetlight {
+    background-image: url('https://images.pexels.com/photos/409701/pexels-photo-409701.jpeg?cs=srgb&dl=pexels-karoldach-409701.jpg&fm=jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    padding: 20px; /* Add some padding */
+    min-height: 100vh; /* Ensure the container covers the full height */
+}
+
+.view-streetlight h2 {
+    color: rgb(252, 250, 250); /* Set the heading color to black */
+    font-size: 2.5rem; /* Make the heading larger */
+    font-weight: bold; /* Make the heading bold */
+    margin-top: 80px; /* Move the heading down further */
+    text-align: center; /* Center the heading */
+}
+
+.view-streetlight .table {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for the table */
+    border-radius: 10px; /* Rounded corners for the table */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin-top: 30px; /* Add space above the table */
+}
+
+.view-streetlight .status-btn {
+    padding: 5px 10px; /* Add padding to the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for the button */
+    color: white; /* White text color */
+    font-weight: bold; /* Bold text */
+}
+
+.view-streetlight .status-on {
+    background-color: green; /* Green for ON status */
+}
+
+.view-streetlight .status-off {
+    background-color: red; /* Red for OFF status */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .view-streetlight h2 {
+        margin-top: 60px; /* Less margin on smaller screens */
+    }
+
+    .view-streetlight .table {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}

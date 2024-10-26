@@ -1,0 +1,120 @@
+/* Overall Page Styling */
+.add-org {
+    background: linear-gradient(
+        to right,
+        rgba(58, 97, 134, 0.7),
+        rgba(137, 37, 62, 0.7)
+    ),
+    url('https://i.pinimg.com/564x/a1/38/4b/a1384b89b787a7e1e0f44fe64d6f9115.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 50px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Centering the Title */
+.add-org h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Form Container */
+.add-org .container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* Form Input Styling */
+.add-org .form-control {
+    background: transparent;
+    border: 2px solid #f4f4f4;
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.add-org .form-control:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+/* Placeholder Styling */
+.add-org .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+/* Button Styling */
+.add-org .btn-warning {
+    background-color: #f4f4f4;
+    color: #3a6186;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+}
+
+.add-org .btn-warning:hover {
+    background-color: #ffcc00;
+    color: #89253e;
+    transform: scale(1.05);
+}
+
+/* Link Styling */
+.add-org .link-white {
+    color: #fff; /* Set link color to white */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.add-org .link-white:hover {
+    color: #ffcc00; /* Change color on hover */
+    text-decoration: underline;
+}
+
+/* Center-align Links */
+.add-org .link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .add-org h1 {
+        font-size: 2rem;
+    }
+
+    .add-org .container {
+        padding: 20px;
+    }
+
+    .add-org .btn-warning {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .add-org .form-control {
+        padding: 10px;
+    }
+}

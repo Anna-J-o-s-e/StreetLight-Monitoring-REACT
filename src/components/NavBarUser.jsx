@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './NavBarUser.css';
 
 const NavBarUser = () => {
   return (
-    <div>
+    <div className='navbar-user'>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
 <div className="container-fluid">
 <a className="navbar-brand" href="/">STREETLIGHT MONITORING SYSTEM</a>
@@ -23,6 +24,9 @@ const NavBarUser = () => {
     </li>
     <li className="nav-item">
       <Link className="nav-link" to="/ViewStreetlightUser">VIEW STREETLIGHTS</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/">SIGN OUT</Link>
     </li>
   </ul>
 </div>

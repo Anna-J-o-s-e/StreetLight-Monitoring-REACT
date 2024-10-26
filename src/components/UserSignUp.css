@@ -1,0 +1,84 @@
+/* UserSignUp.css */
+
+.user-signup {
+    background-color: #f4f4f4; /* Light gray background for a clean look */
+    padding: 40px; /* Add padding */
+    min-height: 100vh; /* Ensure the container covers the full height */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack children vertically */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.user-signup h1 {
+    color: #333; /* Dark color for heading */
+    text-align: center; /* Center the heading */
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 20px; /* Space below heading */
+    font-family: 'Helvetica Neue', sans-serif; /* Modern font */
+    text-transform: uppercase; /* Uppercase letters for the heading */
+    letter-spacing: 2px; /* Spacing between letters */
+}
+
+.user-signup .form-control {
+    border: 2px solid #1cb187; /* Rose color border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background for inputs */
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    transition: box-shadow 0.3s; /* Smooth transition for shadow */
+}
+
+.user-signup .form-control:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 8px rgba(28, 177, 135, 0.6); /* Glow effect on focus */
+}
+
+.user-signup .form-label {
+    color: #555; /* Darker color for labels */
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+.user-signup .btn-warning {
+    background-color: #1cb187; /* Rose color for button */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 12px 20px; /* Padding for button */
+    font-weight: bold; /* Bold text */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.user-signup .btn-warning:hover {
+    background-color: #137450; /* Darker rose color on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Style for the last link to be dark */
+.user-signup .link {
+    color: #1cb187; /* Dark rose color for link */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.user-signup .link:hover {
+    color: #2b9946; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .user-signup h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+
+    .user-signup .form-control {
+        font-size: 0.9rem; /* Smaller font size for inputs */
+    }
+}
+

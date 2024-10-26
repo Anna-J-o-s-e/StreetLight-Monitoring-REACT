@@ -1,99 +1,123 @@
-import axios from 'axios'
-import React, { useState } from 'react'
+import axios from 'axios';
+import React, { useState } from 'react';
+import './UserSignUp.css';
 
 const UserSignUp = () => {
-    const [data,setdata]=useState(
-        {
-            "uname":"",
-            "umail":"",
-            "uaddress":"",
-            "uphone":"",
-            "utype":"",
-            "uadmsno":"",
-            "upassword":"",
-            "uconfirmpassword":""
-        }
-    )
-    const inputHandler=(event)=>{
-        setdata({...data,[event.target.name]:event.target.value})
-    }
-    const readValue=()=>{
-        console.log(data)
-        if (data.upassword==data.uconfirmpassword) {
-            axios.post("http://localhost:8080/usersignup",data).then((response)=>{
-                console.log(data)
-                if (response.data.status=="success") {
-                    alert("Successfully signed up")
+    const [data, setdata] = useState({
+        uname: "",
+        umail: "",
+        uaddress: "",
+        uphone: "",
+        utype: "",
+        uadmsno: "",
+        upassword: "",
+        uconfirmpassword: ""
+    });
+
+    const inputHandler = (event) => {
+        setdata({ ...data, [event.target.name]: event.target.value });
+    };
+
+    const validateEmail = (email) => {
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailPattern.test(email);
+    };
+
+    const validatePhoneNumber = (phone) => {
+        const phonePattern = /^\d{10}$/; // Adjust according to your requirement (10 digits in this case)
+        return phonePattern.test(phone);
+    };
+
+    const readValue = () => {
+        console.log(data);
+        if (data.upassword === data.uconfirmpassword) {
+            if (!validateEmail(data.umail)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+            if (!validatePhoneNumber(data.uphone)) {
+                alert("Please enter a valid phone number (10 digits).");
+                return;
+            }
+            axios.post("http://localhost:8080/usersignup", data).then((response) => {
+                console.log(data);
+                if (response.data.status === "success") {
+                    alert("Successfully signed up");
+                    // Optionally, you could redirect the user to a different page after successful signup
                 } else {
-                    alert("error")
+                    alert("Error signing up");
                 }
-            }).catch()
-    
+            }).catch(error => {
+                console.error("Error during signup:", error);
+                alert("An error occurred while signing up.");
+            });
         } else {
-           alert("password incorrect") 
+            alert("Passwords do not match");
         }
-    }
-  return (
-    
-    <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
+    };
+
+    return (
+        <div className="user-signup">
+            <div>
             <center>
-               
                 <br />
-                <h1 style={{ color: "white" }}>STUDENT / FACULTY SIGNUP</h1></center>
+                <h1>STUDENT / FACULTY SIGNUP</h1>
+           
             <div className="container">
-                <div className="row" style={{ color: "white" }}>
+                <div className="row">
                     <br />
-                    <col className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" />
                     <div className="row g-3">
-                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <label htmlFor="" className="form-label">Name</label>
-                            <input type="text" name='uname' onChange={inputHandler} value={data.uname} className="form-control" placeholder='enter your name' />
+                        <div className="col col-12 col-sm-6 col-md-6">
+                            <label className="form-label">Name</label>
+                            <input type="text" name='uname' onChange={inputHandler} value={data.uname} className="form-control" placeholder='Enter your name' required />
                         </div>
-                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <label htmlFor="" className="form-label"> User Email</label>
-                            <input type="text" name='umail' onChange={inputHandler} value={data.umail} className="form-control" placeholder='enter the email address' />
+                        <div className="col col-12 col-sm-6 col-md-6">
+                            <label className="form-label">User Email</label>
+                            <input type="email" name='umail' onChange={inputHandler} value={data.umail} className="form-control" placeholder='Enter the email address' required />
                         </div>
-                        <div className="col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <label htmlFor="" className="form-label">Address</label>
-                            <textarea name="uaddress" id="" onChange={inputHandler} value={data.uaddress} className="form-control" placeholder='enter address'></textarea>
+                        <div className="col col-12 col-md-6">
+                            <label className="form-label">Address</label>
+                            <textarea name="uaddress" onChange={inputHandler} value={data.uaddress} className="form-control" placeholder='Enter address' required></textarea>
                         </div>
-                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <label htmlFor="" className="form-label">Phone No</label>
-                            <input type="text" name='uphone' onChange={inputHandler} value={data.uphone} className="form-control" placeholder='enter phone number' />
+                        <div className="col col-12 col-sm-6 col-md-6">
+                            <label className="form-label">Phone No</label>
+                            <input type="text" name='uphone' onChange={inputHandler} value={data.uphone} className="form-control" placeholder='Enter phone number' required />
                         </div>
-                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                                    <label htmlFor="" className="form-label">Category</label>
-                                    <select name="utype" id="" className="form-control" placeholder="select the type" value={data.utype} onChange={inputHandler}>
-                                        <option value="">Select one</option>
-                                        <option value="student">Student</option>
-                                        <option value="faculty">Faculty</option>
-                                    </select>
-                                </div>
-                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <label htmlFor="" className="form-label">Password</label>
-                            <input type="password" name="upassword" id="" onChange={inputHandler} value={data.upassword} className="form-control" placeholder='enter your password' />
-
+                        <div className="col col-12 col-sm-6 col-md-6">
+                            <label className="form-label">Category</label>
+                            <select name="utype" className="form-control" value={data.utype} onChange={inputHandler} required>
+                                <option value="">Select one</option>
+                                <option value="student">Student</option>
+                                <option value="faculty">Faculty</option>
+                            </select>
                         </div>
-                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <label htmlFor="" className="form-label">Admission Number / Employee Id</label>
-                            <input type="password" name="uadmsno" id="" onChange={inputHandler} value={data.uadmsno} className="form-control" placeholder='enter your employee id/admission number' />
-
+                        <div className="col col-12 col-sm-6 col-md-6">
+                            <label className="form-label">Password</label>
+                            <input type="password" name="upassword" onChange={inputHandler} value={data.upassword} className="form-control" placeholder='Enter your password' required />
                         </div>
-                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <label htmlFor="" className="form-label">Confirm Password</label>
-                            <input type="password" name="uconfirmpassword" id="" onChange={inputHandler} value={data.uconfirmpassword} className="form-control" placeholder='confirm the password' />
-
+                        <div className="col col-12 col-sm-6 col-md-6">
+                            <label className="form-label">Admission Number / Employee ID</label>
+                            <input type="text" name="uadmsno" onChange={inputHandler} value={data.uadmsno} className="form-control" placeholder='Enter your employee ID/admission number' required />
                         </div>
-                        <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <center><button className="btn btn-warning" style={{ backgroundColor: 'black', color: 'white', padding: '10px 20px' }} onClick={readValue} >SIGN UP</button></center>
+                        <div className="col col-12 col-sm-6 col-md-6">
+                            <label className="form-label">Confirm Password</label>
+                            <input type="password" name="uconfirmpassword" onChange={inputHandler} value={data.uconfirmpassword} className="form-control" placeholder='Confirm the password' required />
                         </div>
-                        <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <p><a href="/UserLogin" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Click to Login</a></p>
-                            </div>
+                        <div className="col col-12 col-md-6">
+                            <center>
+                                <button className="btn btn-warning"  onClick={readValue}>SIGN UP</button>
+                            </center>
+                        </div>
+                        <div className="col col-12">
+                            <p><a href="/UserLogin" className="link">Click to Login</a></p>
+                        </div>
                     </div>
                 </div>
-            </div></div>
-  )
-}
+            </div>
+            </center>
+            </div>
+        </div>
+    );
+};
 
-export default UserSignUp
+export default UserSignUp;

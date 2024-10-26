@@ -1,0 +1,82 @@
+/* ViewUsersOrg.css */
+
+.viewusers-org {
+    background-image: url('https://e0.pxfuel.com/wallpapers/826/573/desktop-wallpaper-aesthetic-city-lights-aesthetic-cityscape.jpg'); /* Set new background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating of the image */
+    min-height: 100vh; /* Full height to ensure it covers the viewport */
+    padding: 20px; /* Padding for the overall page */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    color: #ffffff; /* Default text color for contrast */
+}
+
+.viewusers-org h1 {
+    color: #ffffff; /* Main title color */
+    margin-top: 100px; /* Move heading further down */
+    margin-bottom: 40px; /* Spacing below the title */
+    text-align: center; /* Center align the heading */
+    font-size: 2.5rem; /* Larger font size for the heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+}
+
+.viewusers-org .container {
+    margin-top: 30px; /* Space between navbar and content */
+}
+
+.viewusers-org .table {
+    background-color: rgba(128, 0, 128, 0.9); /* Purple background for the table */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Prevent overflow on rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    margin: 0 auto; /* Center the table */
+    width: 90%; /* Width of the table */
+}
+
+.viewusers-org .table thead {
+    background-color: rgba(75, 0, 130, 0.8); /* Darker purple for header background */
+    color: #ffffff; /* Header text color */
+}
+
+.viewusers-org .table th,
+.viewusers-org .table td {
+    padding: 20px; /* Padding inside table cells */
+    text-align: center; /* Center align text */
+    border-bottom: 1px solid #e0e0e0; /* Light border between rows */
+}
+
+.viewusers-org .table th {
+    font-size: 1.1rem; /* Slightly larger font size for headers */
+}
+
+.viewusers-org .table td {
+    font-size: 1rem; /* Standard font size for table cells */
+}
+
+.viewusers-org .table tr:hover {
+    background-color: rgba(160, 32, 240, 0.5); /* Lighter purple hover effect on rows */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.viewusers-org .link-white {
+    color: #ffffff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold links */
+}
+
+.viewusers-org .link-white:hover {
+    color: #ffd700; /* Gold color on hover for links */
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+.viewusers-org .col {
+    margin-top: 20px; /* Space above the column links */
+    text-align: center; /* Center align links */
+}
+
+@media (max-width: 768px) {
+    .viewusers-org .table th,
+    .viewusers-org .table td {
+        font-size: 0.9rem; /* Slightly smaller font size on mobile */
+    }
+}
