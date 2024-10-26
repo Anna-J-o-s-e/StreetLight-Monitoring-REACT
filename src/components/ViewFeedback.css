@@ -1,0 +1,102 @@
+/* ViewFeedback.css */
+
+/* Page background and base layout */
+.view-feedback {
+    background: url('https://plus.unsplash.com/premium_photo-1682310144714-cb77b1e6d64a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmVlZGJhY2t8ZW58MHx8MHx8fDA%3D') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire background */
+    min-height: 100vh; /* Full height */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertical stacking */
+    align-items: center; /* Center items horizontally */
+    color: #fff; /* White text for readability */
+    font-family: 'Arial', sans-serif; /* Font style */
+    padding: 100px 20px; /* Extra padding for spacing */
+}
+
+/* Centered heading styles */
+.view-feedback h1 {
+    font-size: 3rem; /* Larger heading */
+    color: #000; /* Black color for contrast */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Subtle shadow for depth */
+    margin-bottom: 60px; /* Spacing below the heading */
+    margin-top: 80px; /* Increased spacing above the heading */
+}
+
+/* Table styling */
+.view-feedback .table {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Maximum width */
+    border-collapse: collapse; /* Remove border spacing */
+    margin: 0 auto; /* Center the table */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for table background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Table header styling */
+.view-feedback .table thead {
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+}
+
+.view-feedback .table thead th {
+    padding: 15px; /* Padding for header cells */
+    text-align: left; /* Left align text */
+    font-weight: bold; /* Bold text */
+    border-bottom: 3px solid #0056b3; /* Darker bottom border for header */
+}
+
+/* Table cell styling */
+.view-feedback .table tbody tr {
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.view-feedback .table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.2); /* Highlight row on hover */
+}
+
+.view-feedback .table tbody td,
+.view-feedback .table tbody th {
+    padding: 12px 15px; /* Padding for table cells */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+}
+
+/* Styling for odd and even rows for better visibility */
+.view-feedback .table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly lighter for odd rows */
+}
+
+.view-feedback .table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly darker for even rows */
+}
+
+/* Add a rounded effect to the table cells */
+.view-feedback .table tbody td {
+    border-radius: 5px; /* Rounded corners for cells */
+}
+
+/* Link styling */
+.link-white {
+    color: #333; /* Dark color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transition effects */
+}
+
+.link-white:hover {
+    color: #f39c12; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .view-feedback h1 {
+        font-size: 2.5rem; /* Smaller heading on small screens */
+    }
+
+    .view-feedback .table {
+        width: 90%; /* Responsive table width */
+    }
+}
+

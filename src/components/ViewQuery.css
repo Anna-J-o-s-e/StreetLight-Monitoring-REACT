@@ -1,0 +1,99 @@
+/* ViewQuery.css */
+
+/* Page background and base layout */
+.view-query {
+    background: url('https://seonorth.ca/wp-content/uploads/2021/11/search-query-1-1024x778.jpg') no-repeat center center fixed; /* Background image */
+    background-size: cover; /* Cover the entire background */
+    min-height: 100vh; /* Full height */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertical stacking */
+    align-items: center; /* Center items horizontally */
+    color: #fff; /* Default text color */
+    font-family: 'Arial', sans-serif; /* Font style */
+    padding: 100px 20px; /* Extra padding for spacing */
+}
+
+/* Centered heading styles */
+.view-query h1 {
+    font-size: 3rem; /* Larger heading */
+    color: #000; /* Black color for heading */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Subtle white shadow for depth */
+    margin-bottom: 60px; /* Spacing below the heading */
+    margin-top: 60px; /* Increased spacing above the heading */
+}
+
+/* Table styling */
+.view-query .table {
+    width: 100%; /* Full width */
+    max-width: 1400px; /* Increased maximum width */
+    border-collapse: collapse; /* Remove border spacing */
+    margin: 0 auto; /* Center the table */
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white for table background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow effect */
+}
+
+/* Table header styling */
+.view-query .table thead {
+    background-color: #007bff; /* Solid blue background */
+}
+
+.view-query .table thead th {
+    color: #000; /* Black text for table header */
+    padding: 15px; /* Padding for header cells */
+    text-align: left; /* Left align text */
+    font-weight: bold; /* Bold text */
+    font-size: 1.2rem; /* Slightly larger font size */
+    border-bottom: 2px solid #0056b3; /* Bottom border for header */
+}
+
+/* Table cell styling */
+.view-query .table tbody tr {
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.view-query .table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.3); /* Highlight row on hover */
+}
+
+.view-query .table tbody td, 
+.view-query .table tbody th {
+    padding: 15px 20px; /* Increased padding for table cells */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+    font-size: 1rem; /* Standard font size */
+}
+
+/* Styling for odd and even rows for better visibility */
+.view-query .table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly lighter for odd rows */
+}
+
+.view-query .table tbody tr:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.9); /* Slightly darker for even rows */
+}
+
+/* Link styling */
+.link-white {
+    color: #333; /* Dark color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transition effects */
+}
+
+.link-white:hover {
+    color: #f39c12; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .view-query h1 {
+        font-size: 2.5rem; /* Smaller heading on small screens */
+    }
+
+    .view-query .table {
+        width: 90%; /* Responsive table width */
+    }
+}
+

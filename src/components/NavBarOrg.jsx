@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './NavbarOrg.css';
 
 
 const NavBarOrg = () => {
   return (
-    <div>
+    <div className='navbar-org'>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
 <div className="container-fluid">
 <a className="navbar-brand" href="/">STREETLIGHT MONITORING SYSTEM</a>
@@ -30,6 +31,9 @@ const NavBarOrg = () => {
     </li>
     <li className="nav-item">
       <Link className="nav-link" to="/ViewStreetlight">VIEW NIGHT-LIGHTS</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/">SIGN OUT</Link>
     </li>
   </ul>
 </div>

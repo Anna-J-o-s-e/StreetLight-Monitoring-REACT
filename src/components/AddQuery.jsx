@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import NavBarUser from './NavBarUser'
+import './AddQuery.css';
 
 const AddQuery = () => {
 
@@ -32,12 +33,12 @@ const readValue=()=>{
 
 
   return (
-    <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
+    <div className="add-query">
            <NavBarUser/>
            <br />
-            <center><h1 style={{ color: "white" }}>ADD QUERY</h1></center>
+            <center><h1>ADD QUERY</h1>
             <br />
-            <div className="container" style={{ color: "white" }}>
+            <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <div className="container">
@@ -71,18 +72,20 @@ const readValue=()=>{
                                 </div>
                                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                     
-                                    <button class="btn btn-warning" style={{ backgroundColor: 'black', color: 'white', padding: '10px 20px' }} onClick={readValue}>SUBMIT</button>
+                                    <button class="btn btn-warning" onClick={readValue}>SUBMIT</button>
                                     
                                 </div>
-                                <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                            <p><a href="/" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Login</a></p>
-                            <p><a href="/DashboardUser" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to User Dashboard</a></p>
-                            </div>
+                            
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <p><a href="/" class="link">Back to Login</a></p>
+                            <p><a href="/DashboardUser" class="link">Back to User Dashboard</a></p>
+                            </div>
+                            </center>
         </div>
   )
 }

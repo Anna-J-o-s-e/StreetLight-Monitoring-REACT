@@ -1,0 +1,103 @@
+/* ViewEmployees.css */
+
+/* General page layout */
+.view-employees {
+    background: url('https://t3.ftcdn.net/jpg/09/77/40/92/360_F_977409297_fNfDivOpfUOqZYjfRofDChXySqyGUStR.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Overall text color */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading style */
+.view-employees h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff; /* White color for the heading */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Table styling */
+.view-employees .table {
+    width: 90%; /* Full width for the table */
+    max-width: 1200px; /* Limit the max width */
+    margin: 20px auto; /* Center the table with margin */
+    border-collapse: collapse;
+    background: transparent; /* No background for table */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+/* Table header styling */
+.view-employees .table th {
+    padding: 20px; /* Increased padding for headers */
+    text-align: center;
+    color: #ffffff; /* White text color for table headers */
+    background: rgba(0, 0, 0, 0.5); /* Dark background for header */
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Text shadow for header */
+}
+
+/* Table cell styling */
+.view-employees .table td {
+    padding: 20px; /* Increased padding for taller cells */
+    text-align: center;
+    color: #000000; /* Black text color for table cell content */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Subtle border for rows */
+    min-height: 60px; /* Set minimum height for cells */
+}
+
+/* Row hover effect */
+.view-employees .table tr:hover {
+    background: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+/* Action button styling */
+.view-employees .btn-danger {
+    background-color: #000000; /* Black color for button */
+    border: none;
+    color: #ffffff; /* White text color for button */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover */
+    cursor: pointer;
+}
+
+.view-employees .btn-danger:hover {
+    background-color: #333333; /* Dark grey on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Links styling */
+.view-employees .link-white {
+    color: #ffffff; /* Set link color to white */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.view-employees .link-white:hover {
+    color: #ffbf00; /* Change color on hover */
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .view-employees h1 {
+        font-size: 2.2rem; /* Smaller heading on mobile */
+    }
+
+    .view-employees .table th, .view-employees .table td {
+        padding: 10px; /* Adjusted padding for smaller screens */
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+}
+
+

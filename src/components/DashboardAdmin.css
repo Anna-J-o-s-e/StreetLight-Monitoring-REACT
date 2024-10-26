@@ -1,0 +1,116 @@
+/* DashboardAdmin.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.admin-dashboard {
+  background: url('https://i.pinimg.com/originals/b7/1f/d3/b71fd3d2239a3c98102996ec524afe0c.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 60px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.admin-dashboard h1 {
+  color: #ffffff; /* White text for readability */
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 60px;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Stronger shadow for better contrast */
+}
+
+.admin-dashboard .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-dashboard .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.admin-dashboard .card {
+  width: 320px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  backdrop-filter: blur(10px); /* Blur effect for a modern look */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  color: #ffffff;
+}
+
+.admin-dashboard .card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+.admin-dashboard .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6); /* Light border */
+}
+
+.admin-dashboard .card-body {
+  text-align: center;
+  padding: 25px;
+}
+
+.admin-dashboard .card-title {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.admin-dashboard .btn-primary {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 12px 35px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #ffffff;
+}
+
+.admin-dashboard .btn-primary:hover {
+  background-color: #ffffff;
+  color: #2980b9; /* Dark blue on hover */
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard h1 {
+    font-size: 34px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .admin-dashboard .card {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .admin-dashboard .card-img-top {
+    height: 180px;
+  }
+
+  .admin-dashboard .card-title {
+    font-size: 18px;
+  }
+
+  .admin-dashboard .btn-primary {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+

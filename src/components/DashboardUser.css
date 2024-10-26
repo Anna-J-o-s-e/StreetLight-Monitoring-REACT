@@ -1,0 +1,64 @@
+/* DashboardUser.css */
+
+.dashboard-user {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240717/pngtree-street-lamp-or-vintage-lamp-in-the-garden-lantern-in-a-image_15879630.jpg'); /* Set your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.dashboard-user .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    z-index: 1000;
+}
+
+.dashboard-user .dashboard-content {
+    margin-top: 80px; /* Space for the navbar */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dashboard-user h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dashboard-user h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #13976f; /* Attractive accent color */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.dashboard-user .user-details {
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.dashboard-user .user-details p {
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #19ab80; /* Stylish border for details */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for readability */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dashboard-user .user-details p:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Hover effect for details */
+}

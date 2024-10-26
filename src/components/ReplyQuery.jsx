@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import NavBarOrg from './NavBarOrg'
+import './ReplyQuery.css';
 
 const ReplyQuery = () => {
 
@@ -32,11 +33,11 @@ const readValue = () => {
 }
 
   return (
-    <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
+    <div className="reply-query">
          <NavBarOrg/>
-            <center><h1 style={{ color: "white" }}>ADD REPLY</h1></center>
+            <center><h1>ADD REPLY</h1>
             <div className="container">
-                <div className="row" style={{ color: "white" }}>
+                <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <div className="container">
                             <div className="row g-3">
@@ -61,19 +62,21 @@ const readValue = () => {
                                
                                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                                     
-                                <button class="btn btn-warning" style={{ backgroundColor: 'black', color: 'white', padding: '10px 20px' }} onClick={readValue}>ADD REPLY</button>
+                                <button class="btn btn-warning" onClick={readValue}>ADD REPLY</button>
                                     
                                 </div>
-                                <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                            
-                            <p><a href="/DashboardOrg" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Staff Dashboard</a></p>
-                            <p><a href="/" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Login</a></p>
-                            </div>
+                               
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
+                            
+                            <p><a href="/DashboardOrg" class="link-white">Back to Staff Dashboard</a></p>
+                            <p><a href="/" class="link-white">Back to Login</a></p>
+                            </div>
+            </center>
         </div>
   )
 }

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import NavBarUser from './NavBarUser'
+import './ViewReply.css';
 
 const ViewReply = () => {
 
@@ -21,13 +22,13 @@ const ViewReply = () => {
     }
 
     return (
-        <div style={{ backgroundImage: 'url("https://wallpapers.com/images/hd/street-light-k3nf9uqlleox5bwc.jpg")', backgroundSize: 'cover', minHeight: '100vh' }}>
+        <div className="view-reply">
             <NavBarUser/>
             <br /><br />
-            <center><h1 style={{ color: "white" }}>SEARCH REPLIES</h1></center>
+            <center><h1>SEARCH REPLIES</h1>
             <br /><br />
             <div className="container">
-                <div className="row" style={{ color: "white" }}>
+                <div className="row">
                     <div className="col ol-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <center>
                             <div className="row g-3">
@@ -39,7 +40,7 @@ const ViewReply = () => {
                                 <center>
                                 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                     
-                                    <center><button className="btn btn-warning" style={{ backgroundColor: 'black', color: 'white', padding: '10px 20px' }} onClick={readValue} >SEARCH</button></center>
+                                    <center><button className="btn btn-warning" onClick={readValue} >SEARCH</button></center>
                                    
                                 </div>
                                 </center>
@@ -80,16 +81,17 @@ const ViewReply = () => {
                         </table>
                     </div>
                 </div>
-                <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
-                    <p><a href="/" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to Login</a></p>
-                    <p><a href="/DashboardUser" class="link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Back to User Dashboard</a></p>
-                </div>
+                
 
             </div>
-
-
+            <div className="col col-12 col-sm-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <p><a href="/" class="link">Back to Login</a></p>
+                    <p><a href="/DashboardUser" class="link-">Back to User Dashboard</a></p>
+                </div>
+                </center>
         </div>
     )
 }
 
 export default ViewReply
+

@@ -1,0 +1,80 @@
+.add-feedback {
+    background-image: url('https://www.growthengineering.co.uk/wp-content/uploads/2017/07/Feedback-Blog-Ills_Feedback-emoji-crop.png');
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    min-height: 100vh; /* Full height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px; /* Padding around the content */
+}
+
+.add-feedback .container {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for form */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Padding inside the form */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.add-feedback h1 {
+    font-size: 2.8em; /* Larger font size for title */
+    margin-top: 60px; /* Space above the title */
+    margin-bottom: 40px; /* Space below the title */
+    text-align: center; /* Center the title */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 2px; /* Spacing between letters */
+    color: #338211; /* Catchy red color for heading */
+}
+
+.add-feedback .form-label {
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #338211; /* Red color for labels */
+}
+
+.add-feedback .form-control {
+    border: 1px solid #338211; /* Red border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    padding: 12px; /* Padding inside inputs */
+    background: rgba(255, 255, 255, 0.5); /* Light transparent background for readability */
+    color: #333; /* Dark text for better readability */
+    transition: border-color 0.3s, background 0.3s; /* Transition effects */
+}
+
+.add-feedback .form-control::placeholder {
+    color: #000000; /* Black color for placeholders */
+}
+
+.add-feedback .form-control:focus {
+    border-color: #338211; /* Change border color on focus */
+    background: rgba(255, 255, 255, 0.7); /* Darker background on focus */
+}
+
+.add-feedback .btn-warning {
+    background-color: #338211; /* Button color */
+    border: none; /* No border */
+    color: #ffffff; /* White text for contrast */
+    font-size: 1.1em; /* Slightly larger font size */
+    padding: 12px 24px; /* Padding around button text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+.add-feedback .btn-warning:hover {
+    background-color: #338211; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.add-feedback .link {
+    color: #338211; /* Red color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.add-feedback .link:hover {
+    color: #338211; /* Darker red on hover */
+    text-decoration: underline; /* Underline on hover */
+}
