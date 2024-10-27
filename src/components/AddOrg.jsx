@@ -98,7 +98,7 @@ const AddOrg = () => {
                         </div>
                         <div className="col col-12 col-md-6">
                             <center>
-                                <button className="btn btn-warning"  onClick={readValue}>SIGN UP</button>
+                                <button className="btn btn-warning"  onClick={readValue}>ADD</button>
                             </center>
                         </div>
                         
