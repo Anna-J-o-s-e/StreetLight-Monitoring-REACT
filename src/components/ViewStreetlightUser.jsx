@@ -43,7 +43,7 @@ const ViewStreetlightUser = () => {
     return (
         <div className='viewstrretlight-user'>
             <NavBarUser />
-            <h2>NIGGHT-LIGHT STATUS</h2>
+            <h2>NIGHT-LIGHT STATUS</h2>
             <table className="table table-bordered table-striped">
                 <thead>
                     <tr>
