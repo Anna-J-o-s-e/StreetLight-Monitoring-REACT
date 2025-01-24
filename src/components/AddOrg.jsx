@@ -28,6 +28,11 @@ const AddOrg = () => {
         return phonePattern.test(phone);
     };
 
+    const validatePassword = (password) => {
+        const passwordPattern = /^(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[a-zA-Z0-9]).{6,}$/;
+        return passwordPattern.test(password);
+    };
+
     const readValue = () => {
         console.log(data);
         if (data.opassword === data.oconfirmpassword) {
@@ -37,6 +42,10 @@ const AddOrg = () => {
             }
             if (!validatePhoneNumber(data.ophone)) {
                 alert("Please enter a valid phone number (10 digits).");
+                return;
+            }
+            if (!validatePassword(data.opassword)) {
+                alert("Password must be at least 6 characters long, contain at least one uppercase letter, and one special character.");
                 return;
             }
             axios.post("http://localhost:8080/organizationsignup", data)
@@ -117,3 +126,4 @@ const AddOrg = () => {
 };
 
 export default AddOrg;
+
