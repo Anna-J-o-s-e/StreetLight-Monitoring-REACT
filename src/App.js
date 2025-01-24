@@ -1,23 +1,60 @@
-import logo from './logo.svg';
 import './App.css';
+import AddFeedback from './components/AddFeedback';
+import ViewFeedback from './components/ViewFeedback';
+import AddQuery from './components/AddQuery';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import DashboardUser from './components/DashboardUser';
+import ViewQuery from './components/ViewQuery';
+import DashboardOrg from './components/DashboardOrg';
+import UserSignUp from './components/UserSignUp';
+import MainDashboard from './components/MainDashboard';
+import UserLogin from './components/UserLogin';
+import OrganizationLogin from './components/OrganizationLogin';
+import DashboardAdmin from './components/DashboardAdmin';
+import AdminLogin from './components/AdminLogin';
+import AddOrg from './components/AddOrg';
+import ViewUsers from './components/ViewUsers';
+import ViewEmployees from './components/ViewEmployees';
+import ReplyQuery from './components/ReplyQuery';
+import ViewReply from './components/ViewReply';
+import ViewUsersOrg from './components/ViewUsersOrg';
+import ViewStreetlight from './components/ViewStreetlight';
+import AddStreetlight from './components/AddStreetlight';
+import ViewFeedbackAdmin from './components/ViewFeedbackAdmin';
+import ViewStreetlightUser from './components/ViewStreetlightUser';
+import ViewStreetlightAdmin from './components/ViewStreetlightAdmin';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <BrowserRouter>
+     <Routes>
+     <Route path='/' element={<MainDashboard/>}/>
+      <Route path='/DashboardOrg' element={<DashboardOrg/>}/>
+      <Route path='/AddFeedback' element={<AddFeedback/>}/>
+      <Route path='/ViewFeedback' element={<ViewFeedback/>}/>
+      <Route path='/AddQuery' element={<AddQuery/>}/>
+      <Route path='/ViewQuery' element={<ViewQuery/>}/>
+      <Route path='/UserLogin' element={<UserLogin/>}/>
+      <Route path='/UserSignUp' element={<UserSignUp/>}/>
+      <Route path='/DashboardUser' element={<DashboardUser/>}/>
+      <Route path='/OrganizationLogin' element={<OrganizationLogin/>}/>
+      <Route path='/DashboardAdmin' element={<DashboardAdmin/>}/>
+      <Route path='/AdminLogin' element={<AdminLogin/>}/>
+      <Route path='/AddOrg' element={<AddOrg/>}/>
+      <Route path='/ViewUsers' element={<ViewUsers/>}/>
+      <Route path='/ViewEmployees' element={<ViewEmployees/>}/>
+      <Route path='/ReplyQuery' element={<ReplyQuery/>}/>
+      <Route path='/ViewReply' element={<ViewReply/>}/>
+      <Route path='/ViewUsersOrg' element={<ViewUsersOrg/>}/>
+      <Route path='/ViewStreetlight' element={<ViewStreetlight/>}/>
+      <Route path='/AddStreetlight' element={<AddStreetlight/>}/>
+      <Route path='/ViewFeedbackAdmin' element={<ViewFeedbackAdmin/>}/>
+      <Route path='/ViewStreetlightUser' element={<ViewStreetlightUser/>}/>
+      <Route path='/ViewStreetlightAdmin' element={<ViewStreetlightAdmin/>}/>
+     </Routes>
+     </BrowserRouter> 
+   
     </div>
   );
 }

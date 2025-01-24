@@ -1,0 +1,77 @@
+.add-query {
+    background-image: url('https://www.scanlanspropertymanagement.com/wp-content/uploads/gergheer.jpg'); /* New background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    color: #ffffff; /* White text for contrast */
+    min-height: 100vh; /* Full height */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Padding around the content */
+}
+
+.add-query .container {
+    background: rgba(255, 255, 255, 0.3); /* White transparent background for form */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px; /* Padding inside the form */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.add-query h1 {
+    font-size: 2.5em; /* Larger font size for title */
+    margin-bottom: 120px; /* Increased space below the title */
+    margin-top: 60px; /* Increased space above the title */
+    text-align: center; /* Center the title */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 1px; /* Spacing between letters */
+    color: red; /* Set heading color to red */
+}
+
+.add-query .form-label {
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+    color: #fc3535; /* Red color for labels */
+}
+
+.add-query .form-control {
+    border: 1px solid #fc3535; /* Red border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    padding: 10px; /* Padding inside inputs */
+    background: rgba(255, 255, 255, 0.1); /* Light background for readability */
+    color: #ffffff; /* White text inside inputs */
+}
+
+.add-query .form-control::placeholder {
+    color: #000000; /* Black color for placeholders */
+}
+
+.add-query .form-control:focus {
+    border-color: #fc3535; /* Change border color on focus */
+    background: rgba(255, 255, 255, 0.2); /* Darker background on focus */
+}
+
+.add-query .btn-warning {
+    background-color: #fc3535; /* Button color */
+    border: none; /* No border */
+    color: #000; /* Black text for contrast */
+    font-size: 1.1em; /* Slightly larger font size */
+    padding: 10px 20px; /* Padding around button text */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.add-query .btn-warning:hover {
+    background-color: #fc3535; /* Darker color on hover */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.add-query .link {
+    color: #fc3535; /* Red color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text for links */
+}
+
+.add-query .link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+

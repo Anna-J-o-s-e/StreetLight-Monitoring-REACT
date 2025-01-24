@@ -1,0 +1,112 @@
+/* ViewStreetlightAdmin.css */
+
+/* Scope styles to the ViewStreetlightAdmin page */
+.view-streetlight-admin {
+    background: url('https://wallpapers.com/images/hd/street-light-9t8z4sviud16ql9v.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Heading style */
+.view-streetlight-admin h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Table styling with black transparent background */
+.view-streetlight-admin .table {
+    width: 100%;
+    max-width: 1200px;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    color: #fff;
+    text-align: center;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.view-streetlight-admin .table th, 
+.view-streetlight-admin .table td {
+    padding: 14px 18px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity for cells */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.view-streetlight-admin .table thead th {
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, 0.8); /* Slightly darker black for header */
+}
+
+.view-streetlight-admin .table tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly lighter black for even rows */
+}
+
+/* Status buttons */
+.view-streetlight-admin .status-btn {
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.view-streetlight-admin .status-on {
+    background-color: #32CD32; /* Lime green */
+}
+
+.view-streetlight-admin .status-off {
+    background-color: #FF6347; /* Tomato red */
+}
+
+.view-streetlight-admin .status-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Link styling with white color */
+.view-streetlight-admin .link-white {
+    color: #fff; /* White color for links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    margin: 10px;
+}
+
+.view-streetlight-admin .link-white:hover {
+    color: #f4f4f4; /* Brighter white on hover */
+    text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .view-streetlight-admin h2 {
+        font-size: 2rem;
+    }
+    
+    .view-streetlight-admin .table th, 
+    .view-streetlight-admin .table td {
+        padding: 10px 12px;
+    }
+
+    .view-streetlight-admin .status-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}

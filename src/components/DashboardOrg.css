@@ -1,0 +1,101 @@
+/* DashboardOrg.css */
+
+/* Page background and base layout */
+.org-dashboard {
+    background: url('https://media.istockphoto.com/id/1396577706/photo/pink-sky-and-road-lightings.jpg?b=1&s=170667a&w=0&k=20&c=Ju1dwe9ieopoBcB5utM-LLOfVkN420XASpeyBIB0b5A=') no-repeat center center fixed; /* Set background image */
+    background-size: cover; /* Cover the entire area */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Heading styles with additional margin */
+.org-dashboard h1 {
+    font-size: 3rem;
+    margin-top: 100px; /* Increased top margin to move down further */
+    color: #ffffff; /* Changed to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1.5px;
+}
+
+.org-dashboard h2 {
+    font-size: 1.8rem;
+    margin-top: 30px; /* Increased margin below h1 */
+    margin-bottom: 40px;
+    color: #ffffff; /* Changed to white */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-style: italic;
+}
+
+/* Container styling */
+.org-dashboard .container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Row and card grid */
+.org-dashboard .row {
+    justify-content: center;
+}
+
+/* Card styling */
+.org-dashboard .card {
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    border: none;
+    border-radius: 15px; /* Increased border radius for a softer look */
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for cards */
+    color: #333;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    position: relative; /* Allow for pseudo-element */
+}
+
+/* Enhance card appearance */
+.org-dashboard .card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(174, 195, 232, 0.5); /* Gold overlay */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease;
+}
+
+.org-dashboard .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.org-dashboard .card:hover::after {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Card title styling */
+.org-dashboard .card-title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Button styling */
+.org-dashboard .btn {
+    background-color: #20c997; /* Teal color */
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.org-dashboard .btn:hover {
+    background-color: #17a2b8; /* Darker teal on hover */
+}

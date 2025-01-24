@@ -1,0 +1,92 @@
+/* AddStreetlight.css */
+
+.add-streetlight {
+    background-image: url('https://img.freepik.com/premium-photo/tree-with-pink-flowers-bench-street-light_662214-529529.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating of the image */
+    min-height: 100vh; /* Full height */
+    padding: 20px; /* Padding for the overall page */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    color: #ffffff; /* Default text color for contrast */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: flex-start; /* Align children to the top */
+}
+
+.add-streetlight h1 {
+    color: #ffffff; /* White color for heading */
+    margin-top: 80px; /* Move heading down */
+    margin-bottom: 40px; /* Spacing below the title */
+    text-align: center; /* Center align the heading */
+    font-size: 2.5rem; /* Larger font size */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+
+.add-streetlight .container {
+    margin-top: 30px; /* Space between navbar and content */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Padding for the container */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.add-streetlight label {
+    color: #000000; /* Black color for labels */
+}
+
+.add-streetlight .form-control {
+    border-radius: 8px; /* Rounded corners for inputs */
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for inputs */
+    border: 1px solid #000000; /* Black color border */
+    color: #333; /* Dark text for input */
+}
+
+.add-streetlight .form-control:focus {
+    border-color: #000000; /* Black on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect on focus */
+}
+
+/* Button styles */
+.add-streetlight .btn {
+    background-color: #000000; /* Black color for button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+    padding: 10px 20px; /* Button padding */
+    font-weight: bold; /* Bold text for button */
+}
+
+.add-streetlight .btn:hover {
+    background-color: #444444; /* Darker shade on hover */
+    transform: scale(1.05); /* Scale button on hover */
+}
+
+.add-streetlight .link-white {
+    color: #100101; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold links */
+}
+
+.add-streetlight .link-white:hover {
+    color: #ffd700; /* Gold color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.add-streetlight .col {
+    margin-top: 20px; /* Space above the column links */
+    text-align: center; /* Center align links */
+}
+
+@media (max-width: 768px) {
+    .add-streetlight h1 {
+        font-size: 2rem; /* Smaller font size on mobile */
+    }
+
+    .add-streetlight .btn {
+        padding: 10px 15px; /* Adjust button padding on mobile */
+    }
+}
+

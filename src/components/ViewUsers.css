@@ -1,0 +1,127 @@
+/* Overall Page Styling */
+.view-users {
+    background: linear-gradient(
+        to right,
+        rgba(58, 97, 134, 0.7),
+        rgba(137, 37, 62, 0.7)
+    ),
+    url('https://img.freepik.com/premium-photo/old-street-lamp-night-streetlights-that-glow-brightly-as-night-falls-lamps-aesthetic-purposes-magical-lantern-glowing-warm-golden-citys-twilight-generative-ai_1219132-9431.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 50px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Centering the Title */
+.view-users h1 {
+    font-size: 3rem; /* Increased font size for better visibility */
+    font-weight: bold;
+    color: #f4f4f4;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+    margin-top: 60px; /* Adjusted margin to move the heading down */
+    text-align: center;
+}
+
+/* Table Container */
+.view-users .container {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Table Styling */
+.view-users .table {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners are respected */
+    background-color: rgba(255, 255, 255, 0.15); /* Light background for the table */
+    backdrop-filter: blur(5px); /* Adds a slight blur effect for a modern look */
+}
+
+/* Table Header Styling */
+.view-users .table th {
+    background-color: rgba(255, 255, 255, 0.1); /* Match header color with body */
+    color: #ecf0f1; /* Dark text color for contrast */
+    padding: 12px;
+    border-bottom: 3px solid #2980b9; /* Stronger line for header separation */
+    text-align: left; /* Left-align text in headers */
+    font-size: 1.1rem; /* Slightly larger font size for header */
+    letter-spacing: 1px; /* Increased spacing for a modern look */
+}
+
+/* Table Body Styling */
+.view-users .table td {
+    background-color: rgba(255, 255, 255, 0.1); /* Lightened shade for table data */
+    color: #ecf0f1; /* Text color for table data */
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Light bottom border for table cells */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover Effect for Table Rows */
+.view-users .table tr:hover {
+    background-color: rgba(44, 62, 80, 0.8); /* Darken the row on hover */
+}
+
+/* Button Styling */
+.view-users .btn {
+    background-color: #ffffff; /* Button color set to white */
+    color: #2980b9; /* Text color for the button */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Rounded button corners */
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for the button */
+}
+
+.view-users .btn:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly off-white on hover */
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Link Styling for white color */
+.view-users .link-white {
+    color: #fff; /* White color for the links */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.view-users .link-white:hover {
+    color: #ffcc00; /* Change to yellow on hover */
+    text-decoration: underline;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .view-users h1 {
+        font-size: 2.5rem; /* Reduced font size for smaller screens */
+    }
+
+    .view-users .container {
+        padding: 20px;
+    }
+
+    .view-users .btn {
+        font-size: 0.9rem; /* Reduced button font size */
+        padding: 8px 16px; /* Reduced button padding */
+    }
+
+    .view-users .table th,
+    .view-users .table td {
+        font-size: 0.9rem; /* Adjusted for better readability on smaller screens */
+    }
+}
+

@@ -1,0 +1,22 @@
+/* Status button common styles */
+.status-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: default;
+    width: 60px;
+    text-align: center;
+  }
+  
+  /* Status ON (green) */
+  .status-on {
+    background-color: green;
+  }
+  
+  /* Status OFF (red) */
+  .status-off {
+    background-color: red;
+  }
+  
